@@ -1,4 +1,12 @@
 function [sf] = qeegmulti(varargin) 
+% QEEGMULTI  Generate analysis plots from a series of 3 EEG recordings.
+%   sf = qeegmulti(files, 'Channels', ch, 'Legend', leg) analyzes the
+%   channels specified in _files_ and generates plots. Returns the spectra.
+%   'files' is a cell array of strings, each with a _easy_ filename. 
+%   'ch' is an array of channel numbers, each corresponding to a single
+%   channel to analyze from the corresponding file in 'files'. 
+%   'leg' is a cell array of strings, with labels for plots
+%
 
     %% parse input                  
     parser = inputParser;
